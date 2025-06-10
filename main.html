@@ -1,6 +1,41 @@
 <!DOCTYPE html>
 <html>
+	<head>
+  <meta charset="UTF-8" />
+  <title>URL Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input {
+      display: block;
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 200px;
+    }
+    button {
+      padding: 8px 12px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    h3 {
+      margin-top: 20px;
+    }
+  </style>
+</head>
   <body>
+	   <h2>Share Info via URL</h2>
+
+  <form id="form">
+    <input type="text" id="name" name="name" placeholder="Enter name" />
+    <input type="number" id="year" name="year" placeholder="Enter year" />
+    <button type="submit" id="button">Submit</button>
+  </form>
+
+  <h3 id="url">https://localhost:8080/</h3>
     <script type="text/javascript" src="./script.js">
 </script>
   </body>
